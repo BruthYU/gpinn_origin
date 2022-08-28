@@ -154,7 +154,7 @@ plt.plot(x, sol(x), label="Observed", color="black", marker="s", linestyle="none
 plt.legend(frameon=False)
 plt.ylabel("u")
 plt.xlabel("x")
-
+plt.savefig("./plot/diffusion_reaction_figure1.png")
 
 x = geom.uniform_points(1000)
 plt.figure()
@@ -164,6 +164,7 @@ plt.plot(x, gPINNmodel.predict(x)[:, 1], label="gPINN", linestyle="dashed", colo
 plt.legend(frameon=False)
 plt.ylabel("K")
 plt.xlabel("x")
+plt.savefig("./plot/diffusion_reaction_figure2.png")
 
 plt.figure()
 plt.plot(x, du(x), label="Exact", color="black")
@@ -184,5 +185,5 @@ plt.plot(
 plt.legend(frameon=False)
 plt.ylabel("u'")
 plt.xlabel("x")
-
+plt.savefig("./plot/diffusion_reaction_figure3.png")
 plt.show()

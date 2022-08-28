@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 import deepxde as dde
 from deepxde.backend import tf
-
+#import tensorflow as tf
 # PINN
 def PINNpde(x, y):
     dy_xx = dde.grad.hessian(y, x)
@@ -105,7 +105,7 @@ x = geom.uniform_points(15, boundary=False)
 plt.plot(x, func(x), color="black", marker="o", linestyle="none")
 plt.xlabel("x")
 plt.ylabel("u")
-
+plt.savefig("./plot/poisson_1d_figure1.png")
 
 
 x = geom.uniform_points(1000)
@@ -135,5 +135,6 @@ plt.plot(x, du_x(x), color="black", marker="o", linestyle="none")
 plt.legend(frameon=False)
 plt.xlabel("x")
 plt.ylabel("u'")
-
+plt.savefig("./plot/poisson_1d_figure2.png")
 plt.show()
+

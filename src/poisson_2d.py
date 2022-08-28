@@ -122,6 +122,7 @@ width = ax.get_position().width
 height = ax.get_position().height
 cax = divider.append_axes("right", size="5%", pad=0.2)
 plt.colorbar(im, cax=cax)
+plt.savefig("./plot/poisson_2d_figure1.png")
 plt.show()
 ########################################
 
@@ -164,6 +165,7 @@ width = ax.get_position().width
 height = ax.get_position().height
 cax = divider.append_axes("right", size="5%", pad=0.2)
 plt.colorbar(im, cax=cax)
+plt.savefig("./plot/poisson_2d_figure2.png")
 plt.show()
 
 # gPINN
@@ -340,6 +342,7 @@ height = ax.get_position().height
 cax = divider.append_axes("right", size="5%", pad=0.2)
 
 plt.colorbar(im, cax=cax)
+plt.savefig("./plot/poisson_2d_figure3.png")
 plt.show()
 
 ########################################
@@ -385,4 +388,5 @@ height = ax.get_position().height
 cax = divider.append_axes("right", size="5%", pad=0.2)
 cbar = plt.colorbar(im, cax=cax, ticks=[0, 0.001, 0.002, 0.003, 0.004])
 cbar.ax.set_yticklabels([0.000, 0.001, 0.002, 0.003, 0.004])
+plt.savefig("./plot/poisson_2d_figure4.png")
 plt.show()

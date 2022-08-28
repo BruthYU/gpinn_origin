@@ -161,7 +161,8 @@ plt.plot(x, sol(x), color="black", marker="s", label="Observed", linestyle="none
 plt.legend(frameon=False)
 plt.xlabel("x")
 plt.ylabel("u")
-plt.savefig("e1", dpi=300, bbox_inches="tight")
+#plt.savefig("e1", dpi=300, bbox_inches="tight")
+plt.savefig("./plot/brinkman_forchheimer_2_figure1.png")
 
 
 lines = open("variables1.dat", "r").readlines()
@@ -205,7 +206,7 @@ plt.ylim(ymax=1e-1)
 
 plt.legend(frameon=False)
 plt.ylabel(r"$\nu_e$")
-
+plt.savefig("./plot/brinkman_forchheimer_2_figure2.png")
 plt.figure()
 plt.plot(
     range(0, 200 * l, 200),
@@ -221,5 +222,5 @@ plt.yscale("log")
 plt.ylim(ymax=1e-1)
 plt.legend(frameon=False)
 plt.ylabel(r"$K$")
-
+plt.savefig("./plot/brinkman_forchheimer_2_figure3.png")
 plt.show()

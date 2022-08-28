@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 
 import deepxde as dde
 
-from deepxde.backend import tf
-
+#from deepxde.backend import tensorflow as tf
+import tensorflow as tf
 
 def func(x):
     return -(1.4 - 3 * x) * np.sin(18 * x)
@@ -74,7 +74,7 @@ plt.xlabel("x")
 plt.ylabel("u")
 
 plt.legend(frameon=False)
-
+plt.savefig("./plot/function_figure1.png")
 
 def du_x(x):
     return 3 * np.sin(18 * x) + 18 * (3 * x - 1.4) * np.cos(18 * x)
@@ -104,5 +104,6 @@ plt.xlabel("x")
 plt.ylabel("u'")
 
 plt.legend(frameon=False)
-
+plt.savefig("./plot/function_figure2.png")
 plt.show()
+

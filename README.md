@@ -34,6 +34,9 @@ If you use this data or code for academic research, you are encouraged to cite t
 }
 ```
 
-## Questions
+## requirement
+tensorflow 2.9.1
+tensorflow-probability 0.17.0
+torch 1.9.0
+DeepXDE 1.6.2
 
-To get help on how to use the data or code, simply open an issue in the GitHub "Issues" section.

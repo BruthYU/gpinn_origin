@@ -8,6 +8,7 @@ import re
 
 import deepxde as dde
 from deepxde.backend import tf
+#import tensorflow as tf
 
 
 
@@ -147,6 +148,7 @@ plt.plot(x, sol(x), color = "black", marker = "s", linestyle = "none", label = "
 plt.legend(frameon=False)
 plt.xlabel("x")
 plt.ylabel("u")
+plt.savefig("./plot/brinkman_forchheimer_1_figure1.png")
 
 
 import re
@@ -168,5 +170,5 @@ plt.yscale("log")
 plt.ylim(top = 1e-1)
 plt.legend(frameon=False)
 plt.ylabel(r'$\nu_e$')
-
+plt.savefig("./plot/brinkman_forchheimer_1_figure2.png")
 plt.show()
